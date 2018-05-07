@@ -1,0 +1,152 @@
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato'),
+    local('Lato-Regular'),
+    url(./fonts/Lato-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Meriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Meriweather'),
+    local('Meriweather-Bold'),
+    url(./fonts/Meriweather-Bold.ttf) format('truetype');
+}
+body{
+    font-family: Lato, 'Arial', 'Helvetica', sans-serif;
+}
+header, h3, h4{
+    font-family: Merriweather, 'Times New Roman', 'Times', serif;
+}
+#home, #fav{
+    background-image:url(../img/images-3.jpeg);
+}
+.card {
+    background-color: /*#f2b686*/ #dbb686;
+    border-radius: 6%;
+}
+.overlay{
+    background-color: #3d3630;
+}
+
+#f, #m {
+    margin: 20px;
+}
+
+.bar{
+    background-color: #3f2306;
+    color: #dbb686;
+}
+.bar .tab.icon, .overlay{
+    color: #dbb686;
+}
+.bar .tab:hover,
+.bar .tab:active,
+.bar .tab.current{
+    color: deeppink;
+}
+#displayInfo {
+    display: none;
+}
+ #favContent {
+    display: block;
+}
+
+/********************** media queries ***********************/
+@media screen and (min-width: 1px) {
+.card .size {
+    height: 120px;
+    width: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 0;
+  }
+#fav .style{
+  max-height: 300px;
+  border-radius: 25%;
+  }
+#margin{
+        margin-top: 63%;
+  }
+#padding {
+        padding-left: 47%;
+  }
+#displayInfo .messages{
+    padding-top: 300px;
+	text-align: center;
+  }
+	#Gender .message{
+		margin-top: 0;
+	}
+}
+
+@media screen and (min-width : 400px) {
+    .card .size {
+        height: 200px;
+        width: auto;
+        border: 1px solid black;
+        margin-left: 20%;
+        margin-top: 4%;
+}
+        #fav .style{
+  max-height: 400px;
+}
+       #margin{
+        margin-top: 40%;
+    }  
+     #padding {
+        padding-left: 50%;
+    }
+	#displayInfo .messages{
+    padding-top: 400px;
+	text-align: center;
+  }
+	#Gender .message{
+		margin-top: -50px;
+	}
+}
+
+@media screen and (min-width: 600px){
+      .card .size {
+        height: 300px;
+        width: auto;
+        margin-left: 20%;
+        margin-top: 4%;
+  }
+         #fav .style{
+  max-height: 500px;
+  }
+       #margin{
+        margin-top: 10%;
+
+  }
+	#displayInfo .messages{
+    padding-top: 600px;
+	text-align: center;
+  }
+	
+	#Gender .message{
+		margin-top: -130px;
+	}
+}
+@media screen and (min-width : 800px) {	
+	#Gender .message{
+		margin-top: -170px;
+	}
+	#Gender .message p, legend, label{
+		font-size: 30px;
+	}
+}
+@media screen and (min-width : 1000px) {	
+	#Gender .message{
+		margin-top: -200px;
+	}
+	#Gender .message p, legend, label{
+		font-size: 30px;
+	}
+}
