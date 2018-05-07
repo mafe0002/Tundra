@@ -134,7 +134,7 @@ let app = {
             card.setAttribute("id", profile.id);
             
             let img = document.createElement('img');
-            img.setAttribute('src', "http://" + app.baseUrl + '/' + profile.avatar);
+            img.setAttribute('src', "https://" + app.baseUrl + '/' + profile.avatar);
             df.appendChild(img);
             
             let header = document.createElement('header');
@@ -261,7 +261,7 @@ let app = {
                 card.setAttribute("id", profile.id);
 
                 let img = document.createElement('img');
-                img.setAttribute('src', "http://" + app.baseUrl + profile.avatar);
+                img.setAttribute('src', "https://" + app.baseUrl + profile.avatar);
                 img.setAttribute('class', 'size');
                 df.appendChild(img);
 
